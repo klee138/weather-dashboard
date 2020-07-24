@@ -4,7 +4,7 @@ $(document).ready(function() {
         event.preventDefault();
    $(".card").show();
     $("#five-day-forecast").show();
-
+//need function to store recently searched cities to localstorage
 
         //var cityName = "atlanta";
         var cityName = $("#city").val();
