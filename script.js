@@ -37,8 +37,8 @@ $(document).ready(function() {
             $(".city").text("City: " + cityName);
             $(".temp").text("Temperature: " + tempFixed + " °F");
             //$(".temp").text("Temperature: ");
-            $(".humidity").text("Humidity: " + response.main.humidity);
-            $(".wind").text("Wind Speed : " + response.wind.speed);
+            $(".humidity").text("Humidity: " + response.main.humidity + "%");
+            $(".wind").text("Wind Speed : " + response.wind.speed + " MPH");
             var queryUV = "http://api.openweathermap.org/data/2.5/uvi?&lat=" + coordLat + "&lon=" + coordLon + "&appid=2360f9b77906436bc0a543ab31fd9421";
             $.ajax({
                 url: queryUV,
