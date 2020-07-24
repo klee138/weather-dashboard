@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Dashboard</title>
+<!--     <script src="https://kit.fontawesome.com/abd3ae3b55.js" crossorigin="anonymous"></script> -->
+<link
+rel="stylesheet"
+href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"> -->
+  </head>
+  <body>
+    <div class="bg-dark text-center text-light"> 
+        <header>
+          <h1>Weather Dashboard</h1>
+        <header>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-sm-3 bg-light pt-3 pb-3">
+                <h5>City Search:</h5>
+
+              <form class="form-inline">
+                <div class="form-group mx-sm-3 mb-2">
+                <input type="text" class="form-control" id="city" placeholder="Enter City Name">
+                <button type="submit" class="btn btn-primary mb-" id="search"><i class="fas fa-search"></i></button>
+              </div>
+              </form>
+
+                <div class="row">
+                    <ul class="list-group list-group-flush list" id="city-buttons">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col pt-3 pb-3">
+                <div class="row"> 
+                  <div class="card hide">
+                    <div class="card-body">
+                      <div class="city"></div>
+                      
+                      <div class="temp"></div>
+                      
+                      <div class="humidity"></div>
+                      
+                      <div class="wind"></div>
+                      
+                      <div class="uv"></div>
+                      
+                    </div>
+                </div>
+                </div>
+                <div class="row hide" id="five-day-forecast">
+                  <h5>5 Day Forecast:</h5>
+                </div>
+                <div class="row">
+                  
+                    <div class="col" id="day1">
+                    </div>
+                    <div class="col" id="day2">
+                      
+                    </div>
+                    <div class="col" id="day3">
+                    
+                    </div>
+                    <div class="col" id="day4">
+                    
+                    </div>
+                    <div class="col" id="day5">                   
+                    
+                    </div>
+                  
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src = "script.js"></script>
+  </body>
+</html>
