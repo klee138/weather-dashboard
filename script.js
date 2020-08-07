@@ -92,13 +92,13 @@ $(document).ready(function() {
             var dateFiveHumidity = (response.list[4].main.humidity);
             var dateFiveIcon = (response.list[4].weather[0].icon);
 
-            $("<p>" + dateOne + "</p>").add($("<img src=http://openweathermap.org/img/wn/" + dateOneIcon + ".png>")).add($("<p>" + dateOneTempF.toFixed(2) + "</p>")).add($("<p>" + dateOneHumidity + "</p>")).appendTo($("#day1"));
+            $("<p>" + dateOne + "</p>").add($("<img src=http://openweathermap.org/img/wn/" + dateOneIcon + ".png height=50 width=50>")).add($("<p>" + dateOneTempF.toFixed(2) + "</p>")).add($("<p>" + dateOneHumidity + "</p>")).appendTo($("#day1"));
             //$("#day1").html("<p>" + dateOne + "</p>");
             //$("#day2").text(dateTwo + dateTwoTempFixed + dateTwoHumidity);
-            $("<p>" + dateTwo + "</p>").add($("<img src=http://openweathermap.org/img/wn/" + dateTwoIcon + ".png>")).add($("<p>" + dateTwoTempF.toFixed(2) + "</p>")).add($("<p>" + dateTwoHumidity + "</p>")).appendTo($("#day2"));
-            $("<p>" + dateThree + "</p>").add($("<img src=http://openweathermap.org/img/wn/" + dateThreeIcon + ".png>")).add($("<p>" + dateThreeTempF.toFixed(2) + "</p>")).add($("<p>" + dateThreeHumidity + "</p>")).appendTo($("#day3"));
-            $("<p>" + dateFour + "</p>").add($("<img src=http://openweathermap.org/img/wn/" + dateFourIcon + ".png>")).add($("<p>" + dateFourTempF.toFixed(2) + "</p>")).add($("<p>" + dateFourHumidity + "</p>")).appendTo($("#day4"));
-            $("<p>" + dateFive + "</p>").add($("<img src=http://openweathermap.org/img/wn/" + dateFiveIcon + ".png>")).add($("<p>" + dateFiveTempF.toFixed(2) + "</p>")).add($("<p>" + dateFiveHumidity + "</p>")).appendTo($("#day5"));
+            $("<p>" + dateTwo + "</p>").add($("<img src=http://openweathermap.org/img/wn/" + dateTwoIcon + ".png height=50 width=50>")).add($("<p>" + dateTwoTempF.toFixed(2) + "</p>")).add($("<p>" + dateTwoHumidity + "</p>")).appendTo($("#day2"));
+            $("<p>" + dateThree + "</p>").add($("<img src=http://openweathermap.org/img/wn/" + dateThreeIcon + ".png height=50 width=50>")).add($("<p>" + dateThreeTempF.toFixed(2) + "</p>")).add($("<p>" + dateThreeHumidity + "</p>")).appendTo($("#day3"));
+            $("<p>" + dateFour + "</p>").add($("<img src=http://openweathermap.org/img/wn/" + dateFourIcon + ".png height=50 width=50>")).add($("<p>" + dateFourTempF.toFixed(2) + "</p>")).add($("<p>" + dateFourHumidity + "</p>")).appendTo($("#day4"));
+            $("<p>" + dateFive + "</p>").add($("<img src=http://openweathermap.org/img/wn/" + dateFiveIcon + ".png height=50 width=50>")).add($("<p>" + dateFiveTempF.toFixed(2) + "</p>")).add($("<p>" + dateFiveHumidity + "</p>")).appendTo($("#day5"));
         })
 })
 
